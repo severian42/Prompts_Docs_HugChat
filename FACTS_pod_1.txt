@@ -1,0 +1,1362 @@
+[
+  {
+    "timestamp": [0, 6.96],
+    "text": " All right, so you're ready to like really level up your chat bot game with some serious AI fire power."
+  },
+  {
+    "timestamp": [7.76, 10.96],
+    "text": " We're diving deep into these insights from Nvidia. Okay."
+  },
+  {
+    "timestamp": [10.96, 16.16],
+    "text": " Who've been building not one, not two, but three different AI assistance for their own team."
+  },
+  {
+    "timestamp": [16.16, 20.72],
+    "text": " Wow. And trust me, they've learned a thing or two along the way. I bet they have."
+  },
+  {
+    "timestamp": [20.72, 24.96],
+    "text": " That's impressive three. They've been in the trenches and they've distilled all this experience"
+  },
+  {
+    "timestamp": [24.96, 30.64],
+    "text": " into some really practical advice. I like it. It all boils down to what they call the AFACTS okay it's"
+  },
+  {
+    "timestamp": [30.64, 35.84],
+    "text": " a five things that you absolutely have to nail when you're building smarter chatbots gotcha"
+  },
+  {
+    "timestamp": [35.84, 41.44],
+    "text": " no theoretical fluff here this is like battle tested wisdom straight from the source I'm ready"
+  },
+  {
+    "timestamp": [41.44, 45.04],
+    "text": " so should we unpack this F-A- framework? Yeah, let's break it down."
+  },
+  {
+    "timestamp": [45.04, 50.44],
+    "text": " Okay. First up is F freshness. Okay. Seems obvious, right? Yeah. You want your chatbot to"
+  },
+  {
+    "timestamp": [50.44, 55.84],
+    "text": " have the most up to date info. Absolutely crucial, especially in a fast paced field like AI,"
+  },
+  {
+    "timestamp": [55.84, 61.76],
+    "text": " right? Where new breakthroughs and information are constantly emerging. Constantly. But here's"
+  },
+  {
+    "timestamp": [61.76, 66.24],
+    "text": " the thing. How do you actually keep your chatbot's knowledge base fresh?"
+  },
+  {
+    "timestamp": [66.24, 67.08],
+    "text": " - Ray."
+  },
+  {
+    "timestamp": [67.08, 68.36],
+    "text": " - And Videas got a trick up their sleeve"
+  },
+  {
+    "timestamp": [68.36, 71.72],
+    "text": " called retrieval augmenting generation or rag."
+  },
+  {
+    "timestamp": [71.72, 72.56],
+    "text": " - Okay."
+  },
+  {
+    "timestamp": [72.56, 73.4],
+    "text": " - Have you heard of this?"
+  },
+  {
+    "timestamp": [73.4, 76.16],
+    "text": " - Yeah, so rag is really about giving your chatbot"
+  },
+  {
+    "timestamp": [76.16, 79.28],
+    "text": " a direct line to the freshest data possible."
+  },
+  {
+    "timestamp": [79.28, 80.12],
+    "text": " - Okay."
+  },
+  {
+    "timestamp": [80.12, 80.96],
+    "text": " - So imagine this."
+  },
+  {
+    "timestamp": [80.96, 83.68],
+    "text": " You're asking your chatbot a question about, say,"
+  },
+  {
+    "timestamp": [83.68, 87.48],
+    "text": " the latest advancements in AI image generation."
+  },
+  {
+    "timestamp": [87.48, 93.16],
+    "text": " With RAG, the chatbot can instantly tap into the most recent research papers, blog posts,"
+  },
+  {
+    "timestamp": [93.16, 96.4],
+    "text": " code repositories, all of it to give you an up to the minute answer."
+  },
+  {
+    "timestamp": [96.4, 97.4],
+    "text": " Wow."
+  },
+  {
+    "timestamp": [97.4, 98.4],
+    "text": " It's pretty cool."
+  },
+  {
+    "timestamp": [98.4, 101.88],
+    "text": " So it's not just relying on some static database that gets updated every few months."
+  },
+  {
+    "timestamp": [101.88, 104.6],
+    "text": " It's pulling from the live information stream."
+  },
+  {
+    "timestamp": [104.6, 105.24],
+    "text": " Exactly. And that's essential from the live information stream. - Exactly."
+  },
+  {
+    "timestamp": [105.24, 106.08],
+    "text": " - Yeah."
+  },
+  {
+    "timestamp": [106.08, 108.44],
+    "text": " - And that's essential for building trust with your users."
+  },
+  {
+    "timestamp": [108.44, 109.28],
+    "text": " - Totally."
+  },
+  {
+    "timestamp": [109.28, 110.64],
+    "text": " - Because they need to know that they're getting"
+  },
+  {
+    "timestamp": [110.64, 111.8],
+    "text": " the most current information."
+  },
+  {
+    "timestamp": [111.8, 112.64],
+    "text": " - Pressure."
+  },
+  {
+    "timestamp": [112.64, 113.84],
+    "text": " - Not something from two years ago."
+  },
+  {
+    "timestamp": [113.84, 114.68],
+    "text": " - Exactly."
+  },
+  {
+    "timestamp": [114.68, 115.6],
+    "text": " - Makes sense."
+  },
+  {
+    "timestamp": [115.6, 117.84],
+    "text": " All right, so we've covered freshness."
+  },
+  {
+    "timestamp": [117.84, 120.92],
+    "text": " Let's move on to A, which stands for architecture."
+  },
+  {
+    "timestamp": [120.92, 122.4],
+    "text": " I have to admit, when I first saw this one,"
+  },
+  {
+    "timestamp": [122.4, 124.28],
+    "text": " I thought this was gonna be the most technical part."
+  },
+  {
+    "timestamp": [124.28, 128.32],
+    "text": " - Well, it's definitely important, but it's more about strategy than technical jargon."
+  },
+  {
+    "timestamp": [128.32, 132.8],
+    "text": " Okay. The architecture is all about defining the scope and the purpose of your chatbot."
+  },
+  {
+    "timestamp": [132.8, 136.96],
+    "text": " So like, who is this chatbot for what specific problems will it solve?"
+  },
+  {
+    "timestamp": [136.96, 142.08],
+    "text": " Exactly. Are you building a chatbot for your customer service team to handle common questions?"
+  },
+  {
+    "timestamp": [142.64, 147],
+    "text": " Are you creating an internal chatbot to help employees navigate HR policies,"
+  },
+  {
+    "timestamp": [147, 150],
+    "text": " or are you going even bigger?"
+  },
+  {
+    "timestamp": [150, 152],
+    "text": " Building a company-wide AI assistant"
+  },
+  {
+    "timestamp": [152, 155],
+    "text": " that integrates with all your different systems."
+  },
+  {
+    "timestamp": [155, 157],
+    "text": " And the architecture that you choose"
+  },
+  {
+    "timestamp": [157, 160],
+    "text": " will drastically impact the technology you use."
+  },
+  {
+    "timestamp": [160, 161],
+    "text": " Absolutely."
+  },
+  {
+    "timestamp": [161, 163],
+    "text": " The data it needs to access"
+  },
+  {
+    "timestamp": [163, 165.36],
+    "text": " even how users will interact with it."
+  },
+  {
+    "timestamp": [165.36, 170.24],
+    "text": " All of that. For example, if you're building a chat bot to assist with complex financial analysis,"
+  },
+  {
+    "timestamp": [170.24, 174.32],
+    "text": " yeah, you're going to need a much different architecture. Sure. Then if you're creating a chat"
+  },
+  {
+    "timestamp": [174.32, 180.08],
+    "text": " bot to answer basic FAQs about your products. Totally different. So before you even start thinking"
+  },
+  {
+    "timestamp": [180.08, 186.4],
+    "text": " about code or AI models, right? You need to have a crystal clear vision of what you're building and who it's for."
+  },
+  {
+    "timestamp": [186.4, 187.44],
+    "text": " - 100%."
+  },
+  {
+    "timestamp": [187.44, 190.44],
+    "text": " - A well-defined architecture is like a blueprint."
+  },
+  {
+    "timestamp": [190.44, 191.28],
+    "text": " - It is."
+  },
+  {
+    "timestamp": [191.28, 193],
+    "text": " - Guiding every other decision that you make"
+  },
+  {
+    "timestamp": [193, 194.8],
+    "text": " throughout that development process."
+  },
+  {
+    "timestamp": [194.8, 196.04],
+    "text": " - I like that analogy."
+  },
+  {
+    "timestamp": [196.04, 198],
+    "text": " - Okay, that makes a lot more sense now."
+  },
+  {
+    "timestamp": [199.12, 200.96],
+    "text": " Moving on to sea cost."
+  },
+  {
+    "timestamp": [200.96, 201.8],
+    "text": " - Okay."
+  },
+  {
+    "timestamp": [201.8, 202.8],
+    "text": " - I bet this is a big one."
+  },
+  {
+    "timestamp": [202.8, 203.64],
+    "text": " - Yeah."
+  },
+  {
+    "timestamp": [203.64, 207.2],
+    "text": " - Anyone thinking about building with AI? - This is a big one. Anyone thinking about building with AI? This is a big one."
+  },
+  {
+    "timestamp": [207.2, 211.64],
+    "text": " Yeah, those fancy AI models, especially the big commercial ones. Don't come cheap."
+  },
+  {
+    "timestamp": [211.64, 216.76],
+    "text": " They do not. So how do you avoid blowing your entire budget before you even get started?"
+  },
+  {
+    "timestamp": [216.76, 221.44],
+    "text": " That's the question, right? Well, in videos research really emphasizes the importance of finding"
+  },
+  {
+    "timestamp": [221.44, 232],
+    "text": " the right balance between cost and performance. It's about choosing the AI tools and technologies that align with both your budget and your chatbots specific requirements."
+  },
+  {
+    "timestamp": [232, 236],
+    "text": " So it's not always about going for the biggest most expensive model on the market."
+  },
+  {
+    "timestamp": [236, 237],
+    "text": " Not at all."
+  },
+  {
+    "timestamp": [237, 246.48],
+    "text": " Sometimes a smaller, more specialized model, even an open source one can be just as effective if not more so for certain tasks."
+  },
+  {
+    "timestamp": [246.48, 248.28],
+    "text": " It all depends on your needs."
+  },
+  {
+    "timestamp": [248.28, 249.28],
+    "text": " That's really interesting."
+  },
+  {
+    "timestamp": [249.28, 251.44],
+    "text": " So how do you know which model is right for you?"
+  },
+  {
+    "timestamp": [251.44, 255.6],
+    "text": " Does it just trial an error or is there a more strategic approach?"
+  },
+  {
+    "timestamp": [255.6, 262.24],
+    "text": " Well, Nvidia actually recommends a combination of research and experimentation and really"
+  },
+  {
+    "timestamp": [262.24, 267],
+    "text": " careful evaluation of your chatbot's performance against your predefined goals."
+  },
+  {
+    "timestamp": [267, 274],
+    "text": " So it's like finding that sweet spot between what you need your chatbot to do and what you can realistically afford."
+  },
+  {
+    "timestamp": [274, 277],
+    "text": " Exactly. You don't need a Ferrari to pick up groceries."
+  },
+  {
+    "timestamp": [277, 281],
+    "text": " Sometimes a reliable fuel efficient car is the smarter choice."
+  },
+  {
+    "timestamp": [281, 287.6],
+    "text": " I like that analogy. So we've got our fresh data at the right architecture, and we've even found an AI model that fits our budget."
+  },
+  {
+    "timestamp": [287.6, 288.52],
+    "text": " Right."
+  },
+  {
+    "timestamp": [288.52, 290.2],
+    "text": " What's next on our chatbot checklist?"
+  },
+  {
+    "timestamp": [290.2, 292.48],
+    "text": " Well, before you release your chatbot into the wild,"
+  },
+  {
+    "timestamp": [292.48, 294.6],
+    "text": " you've got to put it through its paces."
+  },
+  {
+    "timestamp": [294.6, 296.92],
+    "text": " That's where T comes in, testing."
+  },
+  {
+    "timestamp": [296.92, 299.52],
+    "text": " And with AI, I imagine testing is more than just"
+  },
+  {
+    "timestamp": [299.52, 301.28],
+    "text": " making sure the buttons work, right?"
+  },
+  {
+    "timestamp": [301.28, 302.72],
+    "text": " Oh, absolutely."
+  },
+  {
+    "timestamp": [302.72, 306.08],
+    "text": " Testing an AI chatbot is all about making sure"
+  },
+  {
+    "timestamp": [306.08, 311.44],
+    "text": " that it can handle the unpredictable nature of human language and interaction. You've got to"
+  },
+  {
+    "timestamp": [311.44, 316.16],
+    "text": " make sure that it can understand different phrasings, identify, and tend and respond accurately"
+  },
+  {
+    "timestamp": [316.16, 320.56],
+    "text": " and appropriately in a wide range of situations. So what did that actually look like in practice?"
+  },
+  {
+    "timestamp": [320.56, 328.64],
+    "text": " How do you test an AI chat bot? So in NVIDIA is a huge advocate for rigorous multifaceted testing."
+  },
+  {
+    "timestamp": [328.64, 329.12],
+    "text": " Okay."
+  },
+  {
+    "timestamp": [329.12, 333.84],
+    "text": " They use a combination of automated testing where they use algorithms to fire off"
+  },
+  {
+    "timestamp": [333.84, 339.12],
+    "text": " tons of questions and evaluate the responses as well as real-world testing with actual human"
+  },
+  {
+    "timestamp": [339.12, 342.32],
+    "text": " users. That makes sense. So, you want to see how it performs both in a controlled"
+  },
+  {
+    "timestamp": [342.32, 348.64],
+    "text": " environment and in the wild, so to speak. Exactly. And this real world testing is crucial for identifying what they call those"
+  },
+  {
+    "timestamp": [348.64, 353.28],
+    "text": " edge cases. Those unexpected questions or requests that you might not have anticipated during"
+  },
+  {
+    "timestamp": [353.28, 358.32],
+    "text": " development. Right. Because humans are full of surprises, especially when it comes to how we interact"
+  },
+  {
+    "timestamp": [358.32, 363.6],
+    "text": " with technology. 100%. Wow. And those surprises can be valuable learning opportunities. Every time"
+  },
+  {
+    "timestamp": [363.6, 365.5],
+    "text": " your chatbot encounters an edge case,"
+  },
+  {
+    "timestamp": [365.5, 367.7],
+    "text": " it's a chance to refine its understanding,"
+  },
+  {
+    "timestamp": [367.7, 371],
+    "text": " improve its responses, and become even more intelligent."
+  },
+  {
+    "timestamp": [371, 373.5],
+    "text": " So it's all part of that continuous learning process"
+  },
+  {
+    "timestamp": [373.5, 375],
+    "text": " that makes AI so fascinating."
+  },
+  {
+    "timestamp": [375, 376],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [376, 378],
+    "text": " And speaking of fascinating at this,"
+  },
+  {
+    "timestamp": [378, 381],
+    "text": " Nvidia actually uses AI to test AI."
+  },
+  {
+    "timestamp": [381, 382],
+    "text": " Whoa, wait, what?"
+  },
+  {
+    "timestamp": [382, 385.72],
+    "text": " So they have AI systems challenging other AI systems."
+  },
+  {
+    "timestamp": [385.72, 387.68],
+    "text": " It's like something out of a sci-fi movie."
+  },
+  {
+    "timestamp": [387.68, 388.68],
+    "text": " - Oh, right."
+  },
+  {
+    "timestamp": [388.68, 390.68],
+    "text": " But it's actually incredibly effective."
+  },
+  {
+    "timestamp": [390.68, 391.52],
+    "text": " - Really?"
+  },
+  {
+    "timestamp": [391.52, 393.48],
+    "text": " - They've developed these AI testing agents"
+  },
+  {
+    "timestamp": [393.48, 396.88],
+    "text": " that are specifically designed to probe for vulnerabilities,"
+  },
+  {
+    "timestamp": [396.88, 400.36],
+    "text": " identify biases, and essentially try to break their chatbots"
+  },
+  {
+    "timestamp": [400.36, 402.2],
+    "text": " so they can make them stronger."
+  },
+  {
+    "timestamp": [402.2, 405],
+    "text": " - So it's like having a super smart AI sparring partner"
+  },
+  {
+    "timestamp": [405, 406],
+    "text": " Yes."
+  },
+  {
+    "timestamp": [406, 408],
+    "text": " that helps your chatbot level up its skills."
+  },
+  {
+    "timestamp": [408, 409],
+    "text": " That's a great way to put it."
+  },
+  {
+    "timestamp": [409, 413],
+    "text": " And this kind of adversarial testing is becoming increasingly important"
+  },
+  {
+    "timestamp": [413, 418],
+    "text": " as AI chatbots become more sophisticated and are entrusted with more complex tasks."
+  },
+  {
+    "timestamp": [418, 420],
+    "text": " Makes a lot of sense."
+  },
+  {
+    "timestamp": [420, 423],
+    "text": " Okay, so we've covered freshness architecture cost and testing."
+  },
+  {
+    "timestamp": [423, 425.88],
+    "text": " What's the final piece of the puzzle?"
+  },
+  {
+    "timestamp": [425.88, 429.88],
+    "text": " The final and arguably most important piece is S,"
+  },
+  {
+    "timestamp": [429.88, 431.52],
+    "text": " which stands for security."
+  },
+  {
+    "timestamp": [431.52, 433.28],
+    "text": " With all the hype around AI,"
+  },
+  {
+    "timestamp": [433.28, 435.04],
+    "text": " it's easy to forget about security."
+  },
+  {
+    "timestamp": [435.04, 439],
+    "text": " It's easy to get caught up in the excitement of what AI can do,"
+  },
+  {
+    "timestamp": [439, 441.4],
+    "text": " but security can't be an afterthought."
+  },
+  {
+    "timestamp": [441.4, 443],
+    "text": " It's got to be baked in from the beginning."
+  },
+  {
+    "timestamp": [443, 444.18],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [444.18, 446.9],
+    "text": " And Nvidia takes this multi-layered approach"
+  },
+  {
+    "timestamp": [446.9, 448.28],
+    "text": " to chatbot security."
+  },
+  {
+    "timestamp": [448.28, 450.8],
+    "text": " They talk about everything from secure data storage"
+  },
+  {
+    "timestamp": [450.8, 453.92],
+    "text": " and access controls to preventing data leaks"
+  },
+  {
+    "timestamp": [453.92, 455.4],
+    "text": " and mitigating biases."
+  },
+  {
+    "timestamp": [455.4, 457.32],
+    "text": " So what does that look like in practice?"
+  },
+  {
+    "timestamp": [457.32, 458.92],
+    "text": " Well, let's start with data."
+  },
+  {
+    "timestamp": [458.92, 462.08],
+    "text": " Your chatbot is only as good as the data it's trained on."
+  },
+  {
+    "timestamp": [462.08, 462.36],
+    "text": " Right."
+  },
+  {
+    "timestamp": [462.36, 464.76],
+    "text": " So you need to make sure that data is stored securely"
+  },
+  {
+    "timestamp": [464.76, 467.56],
+    "text": " and that you have strict controls over who can access it."
+  },
+  {
+    "timestamp": [467.56, 468.4],
+    "text": " - Okay."
+  },
+  {
+    "timestamp": [468.4, 471.44],
+    "text": " - It's also essential to be mindful of any potential biases"
+  },
+  {
+    "timestamp": [471.44, 474.72],
+    "text": " in your data that could lead to unfair or discriminatory"
+  },
+  {
+    "timestamp": [474.72, 475.48],
+    "text": " outcomes."
+  },
+  {
+    "timestamp": [475.48, 478.08],
+    "text": " - Right, because you don't want your chatbot inheriting"
+  },
+  {
+    "timestamp": [478.08, 481.44],
+    "text": " any bad habits or prejudices from the data it's trained on."
+  },
+  {
+    "timestamp": [481.44, 482.28],
+    "text": " - Exactly."
+  },
+  {
+    "timestamp": [482.28, 484.04],
+    "text": " And then there's the chatbot itself."
+  },
+  {
+    "timestamp": [484.04, 488.72],
+    "text": " You need to make sure that it's designed with security in mind from the ground up. Right. That means implementing"
+  },
+  {
+    "timestamp": [488.72, 494.4],
+    "text": " robust authentication measures to prevent unauthorized access and scripting sensitive information"
+  },
+  {
+    "timestamp": [494.4, 499.12],
+    "text": " and constantly monitoring for any suspicious activity. It's like building a bank fault for your"
+  },
+  {
+    "timestamp": [499.12, 504.4],
+    "text": " chatbot's brain. Exactly. And just like a bank vault needs security guards, you need to have systems"
+  },
+  {
+    "timestamp": [504.4, 506],
+    "text": " in place to prevent data leaks."
+  },
+  {
+    "timestamp": [506, 512],
+    "text": " Right. That means implementing strict policies around what information your chat bot can and cannot access"
+  },
+  {
+    "timestamp": [512, 517],
+    "text": " and constantly monitoring its interactions to make sure it's not accidentally spilling any secrets."
+  },
+  {
+    "timestamp": [517, 524],
+    "text": " Okay, so we've covered the importance of secure data storage access controls, bias mitigation, and preventing data leaks."
+  },
+  {
+    "timestamp": [524, 525.68],
+    "text": " Anything else we need to keep in mind?"
+  },
+  {
+    "timestamp": [525.68, 527.68],
+    "text": " - Well, all of those measures are essential."
+  },
+  {
+    "timestamp": [527.68, 530.68],
+    "text": " But Nvidia emphasizes that true security"
+  },
+  {
+    "timestamp": [530.68, 532.4],
+    "text": " is an ongoing process."
+  },
+  {
+    "timestamp": [532.4, 533.24],
+    "text": " - Okay."
+  },
+  {
+    "timestamp": [533.24, 534.64],
+    "text": " - It's not enough to just set it and forget it."
+  },
+  {
+    "timestamp": [534.64, 537.44],
+    "text": " You need to constantly be evolving your security measures"
+  },
+  {
+    "timestamp": [537.44, 538.92],
+    "text": " to stay ahead of the curve."
+  },
+  {
+    "timestamp": [538.92, 540.36],
+    "text": " - So as new threats emerge,"
+  },
+  {
+    "timestamp": [540.36, 541.76],
+    "text": " you need to be ready to adapt"
+  },
+  {
+    "timestamp": [541.76, 543.92],
+    "text": " and update your chatbot's defenses."
+  },
+  {
+    "timestamp": [543.92, 557],
+    "text": " - Exactly. And that means staying informed about the latest security best practices investing in robust security tools and technologies and fostering a culture of security awareness within your organization."
+  },
+  {
+    "timestamp": [557, 562],
+    "text": " So building a secure chatbot is a team effort that requires constant vigilance and adaptation."
+  },
+  {
+    "timestamp": [562, 565.56],
+    "text": " Absolutely. But when you get it right, the rewards are huge."
+  },
+  {
+    "timestamp": [565.56, 567.88],
+    "text": " You'll have a chatbot that's not only smart and efficient,"
+  },
+  {
+    "timestamp": [567.88, 569.68],
+    "text": " but also trustworthy and reliable,"
+  },
+  {
+    "timestamp": [569.68, 572.2],
+    "text": " which is essential for building lasting relationships"
+  },
+  {
+    "timestamp": [572.2, 573.04],
+    "text": " with your users."
+  },
+  {
+    "timestamp": [573.04, 574.24],
+    "text": " - That makes a lot of sense."
+  },
+  {
+    "timestamp": [574.24, 575.56],
+    "text": " Okay, so we've covered in videos,"
+  },
+  {
+    "timestamp": [575.56, 577.44],
+    "text": " FACT, CTS, framework,"
+  },
+  {
+    "timestamp": [577.44, 580.32],
+    "text": " freshness architecture, cost testing and security."
+  },
+  {
+    "timestamp": [580.32, 581.68],
+    "text": " That's a lot to take in."
+  },
+  {
+    "timestamp": [581.68, 583.36],
+    "text": " - It is a lot, but it's important to remember"
+  },
+  {
+    "timestamp": [583.36, 586.26],
+    "text": " that these five elements are all interconnected."
+  },
+  {
+    "timestamp": [586.26, 591.1],
+    "text": " They work together to create a solid foundation for building a truly exceptional AI chatbot."
+  },
+  {
+    "timestamp": [591.1, 595.12],
+    "text": " And speaking of building, you mentioned earlier that NVIDIA actually identified 15 specific"
+  },
+  {
+    "timestamp": [595.12, 599.12],
+    "text": " control points within the retrieval augmented generation pipeline that can make or break"
+  },
+  {
+    "timestamp": [599.12, 600.58],
+    "text": " a chatbot's performance."
+  },
+  {
+    "timestamp": [600.58, 601.58],
+    "text": " They did."
+  },
+  {
+    "timestamp": [601.58, 606.28],
+    "text": " And these control points are where the rubber meets the road when it comes to translating"
+  },
+  {
+    "timestamp": [606.28, 610.2],
+    "text": " those high-level Fax ETS principles into tangible actions."
+  },
+  {
+    "timestamp": [610.2, 613.16],
+    "text": " Okay, so let's dive into those 15 control points."
+  },
+  {
+    "timestamp": [613.16, 616.8],
+    "text": " I'm curious to see what kind of insights NVIDIA has uncovered."
+  },
+  {
+    "timestamp": [616.8, 621.72],
+    "text": " Yeah, and these 15 control points, they cover this entire retrieval augmented generation"
+  },
+  {
+    "timestamp": [621.72, 622.72],
+    "text": " pipeline."
+  },
+  {
+    "timestamp": [622.72, 625.36],
+    "text": " You know, from how you prepare and structure your data,"
+  },
+  {
+    "timestamp": [625.36, 630.4],
+    "text": " all the way to like those fine-tuning tweaks that just squeeze out peak performance from your AI models."
+  },
+  {
+    "timestamp": [630.4, 634.72],
+    "text": " So it's about more than just having a mountain of data and letting the AI loose on it."
+  },
+  {
+    "timestamp": [634.72, 638.96],
+    "text": " Right. Yeah. You can't just like, here, AI figure it out. You get much better results if you're"
+  },
+  {
+    "timestamp": [638.96, 642.24],
+    "text": " a little more strategic. You have to be strategic at every step of the process."
+  },
+  {
+    "timestamp": [642.24, 652.76],
+    "text": " Exactly. And in videos experience has shown that even small changes within these control points can make a big difference in how accurate efficient and ultimately how helpful your chatbot is."
+  },
+  {
+    "timestamp": [652.92, 656.28],
+    "text": " So let's break it down. What are some of the key control points that really stood out to you?"
+  },
+  {
+    "timestamp": [656.32, 662],
+    "text": " Well, one that Nvidia really emphasizes is the importance of metadata enrichment."
+  },
+  {
+    "timestamp": [662.52, 667.2],
+    "text": " It sounds a bit technical, but it's actually a pretty intuitive concept."
+  },
+  {
+    "timestamp": [667.2, 668.56],
+    "text": " - Okay, demystify it for me."
+  },
+  {
+    "timestamp": [668.56, 669.4],
+    "text": " - Yeah."
+  },
+  {
+    "timestamp": [669.4, 671.04],
+    "text": " - What is metadata enrichment,"
+  },
+  {
+    "timestamp": [671.04, 673.32],
+    "text": " and why is it so important for chatbots?"
+  },
+  {
+    "timestamp": [673.32, 676.04],
+    "text": " - Okay, so imagine you have like this whole library"
+  },
+  {
+    "timestamp": [676.04, 678.76],
+    "text": " of documents that your chatbot needs to access"
+  },
+  {
+    "timestamp": [678.76, 680.32],
+    "text": " to answer questions."
+  },
+  {
+    "timestamp": [680.32, 683.64],
+    "text": " Right, metadata enrichment is like adding labels"
+  },
+  {
+    "timestamp": [683.64, 690.32],
+    "text": " to those documents, providing extra context that helps the chat bot quickly find the most relevant information."
+  },
+  {
+    "timestamp": [690.32, 694.4],
+    "text": " >> So instead of just having a document titled like, \"Company Policies,\""
+  },
+  {
+    "timestamp": [694.4, 699.84],
+    "text": " you might add tags for things like vacation time, expense reports, remote work,"
+  },
+  {
+    "timestamp": [699.84, 702.04],
+    "text": " things that users might actually search for."
+  },
+  {
+    "timestamp": [702.04, 707.04],
+    "text": " >> Exactly. Those tags are like breadcrumbs for your chatbot, guiding it to the right"
+  },
+  {
+    "timestamp": [707.04, 708.24],
+    "text": " information within seconds."
+  },
+  {
+    "timestamp": [708.24, 708.6],
+    "text": " Okay."
+  },
+  {
+    "timestamp": [708.76, 713.08],
+    "text": " And the more detailed and accurate your metadata is, the more efficient and effective"
+  },
+  {
+    "timestamp": [713.08, 714.12],
+    "text": " your chatbot will be."
+  },
+  {
+    "timestamp": [714.28, 714.96],
+    "text": " It makes sense."
+  },
+  {
+    "timestamp": [715.08, 716.64],
+    "text": " You're giving your chatbot a roadmap."
+  },
+  {
+    "timestamp": [716.68, 717.12],
+    "text": " Yes."
+  },
+  {
+    "timestamp": [717.16, 719.76],
+    "text": " Instead of just handing it a compass and hoping for the best."
+  },
+  {
+    "timestamp": [719.8, 720.48],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [720.68, 724.28],
+    "text": " And this ties directly into another important control point, chunky."
+  },
+  {
+    "timestamp": [724.48, 724.96],
+    "text": " Chunky."
+  },
+  {
+    "timestamp": [725.36, 727.16],
+    "text": " Is that when we break out the Snickers bar?"
+  },
+  {
+    "timestamp": [727.16, 732.76],
+    "text": " Not exactly, but it does involve breaking something down into smaller more manageable pieces."
+  },
+  {
+    "timestamp": [732.76, 736.16],
+    "text": " Okay, I'm intrigued. Tell me more about this chunking concept."
+  },
+  {
+    "timestamp": [736.16, 742.96],
+    "text": " Okay, so think about it this way. If you ask a chat bought a question, you don't want"
+  },
+  {
+    "timestamp": [742.96, 746.8],
+    "text": " it to respond by like spitting back an entire Wikipedia page as an"
+  },
+  {
+    "timestamp": [746.8, 752.8],
+    "text": " answer. It needs to be able to pinpoint the most relevant information within a document."
+  },
+  {
+    "timestamp": [752.8, 757.36],
+    "text": " Okay. And that's where chunking comes in. So instead of treating a document as just this one"
+  },
+  {
+    "timestamp": [757.36, 763.28],
+    "text": " big wall of text, you break it down into smaller, more digestible chunks. Exactly. By dividing"
+  },
+  {
+    "timestamp": [763.28, 767.5],
+    "text": " the content into these logical chunks, you make it much easier for the chatbot"
+  },
+  {
+    "timestamp": [767.5, 772.64],
+    "text": " to zero in on the most relevant information, which ultimately leads to more concise and accurate"
+  },
+  {
+    "timestamp": [772.64, 773.64],
+    "text": " answers."
+  },
+  {
+    "timestamp": [773.64, 777.68],
+    "text": " So better organization equals better comprehension, even for chatbots."
+  },
+  {
+    "timestamp": [777.68, 778.92],
+    "text": " Even for chatbots."
+  },
+  {
+    "timestamp": [778.92, 783.32],
+    "text": " And another fascinating aspect of these control points is how they address the nuances of"
+  },
+  {
+    "timestamp": [783.32, 784.32],
+    "text": " human language."
+  },
+  {
+    "timestamp": [784.32, 785.84],
+    "text": " Okay. We're talking about things like query,"
+  },
+  {
+    "timestamp": [785.84, 787.84],
+    "text": " refrasing, and query expansion."
+  },
+  {
+    "timestamp": [787.84, 791.84],
+    "text": " Okay. So this is all about bridging the gap between how we as humans speak"
+  },
+  {
+    "timestamp": [791.84, 794.72],
+    "text": " and how a chatbot might process language."
+  },
+  {
+    "timestamp": [794.72, 800.56],
+    "text": " 100%. We humans are often vague or ambiguous in the way we ask questions."
+  },
+  {
+    "timestamp": [800.56, 804.4],
+    "text": " For sure. We might use slang jargon or leave out important details."
+  },
+  {
+    "timestamp": [804.4, 808.2],
+    "text": " And chatbots as smart as they're becoming. Yeah. They still need a bit of help"
+  },
+  {
+    "timestamp": [808.2, 811.68],
+    "text": " deciphering our messy human language. They need a little help. Quirry"
+  },
+  {
+    "timestamp": [811.68, 818.32],
+    "text": " refrasing is all about teaching your chatbot to interpret those vague requests"
+  },
+  {
+    "timestamp": [818.32, 821.96],
+    "text": " and translate them into something that it can actually work with. Okay. It's"
+  },
+  {
+    "timestamp": [821.96, 826.64],
+    "text": " like having a built-in translator. So cool. That helps your chatbot understand what you mean,"
+  },
+  {
+    "timestamp": [826.64, 828.32],
+    "text": " even if you don't say it perfectly."
+  },
+  {
+    "timestamp": [828.32, 829.92],
+    "text": " It's like they're learning to speak her language,"
+  },
+  {
+    "timestamp": [829.92, 830.88],
+    "text": " slang and all."
+  },
+  {
+    "timestamp": [830.88, 831.68],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [831.68, 834.24],
+    "text": " And query expansion takes it a step further."
+  },
+  {
+    "timestamp": [834.24, 837.44],
+    "text": " Instead of just trying to interpret the words that you use,"
+  },
+  {
+    "timestamp": [837.44, 841.28],
+    "text": " literally the chatbot can actually analyze the intent"
+  },
+  {
+    "timestamp": [841.28, 844.8],
+    "text": " behind your question and expand its search accordingly."
+  },
+  {
+    "timestamp": [844.8, 850.64],
+    "text": " So if I ask about, say, travel policies, it might also search for information on expense reports"
+  },
+  {
+    "timestamp": [850.64, 854.4],
+    "text": " or booking flights, even if I didn't explicitly mention those things?"
+  },
+  {
+    "timestamp": [854.4, 859.12],
+    "text": " Exactly. It's about anticipating your needs and proactively providing the most relevant"
+  },
+  {
+    "timestamp": [859.12, 862.48],
+    "text": " information, even if you don't ask for it directly."
+  },
+  {
+    "timestamp": [862.48, 863.92],
+    "text": " Wow, that's really impressive."
+  },
+  {
+    "timestamp": [863.92, 864.24],
+    "text": " Yeah."
+  },
+  {
+    "timestamp": [864.24, 867.88],
+    "text": " But with all of these techniques working behind the scenes, it makes you wonder, what about"
+  },
+  {
+    "timestamp": [867.88, 869.68],
+    "text": " the brains of the operation?"
+  },
+  {
+    "timestamp": [869.68, 871.96],
+    "text": " The AI models themselves."
+  },
+  {
+    "timestamp": [871.96, 875.84],
+    "text": " Is bigger always better when it comes to chatbot AI?"
+  },
+  {
+    "timestamp": [875.84, 877.16],
+    "text": " That's a great question."
+  },
+  {
+    "timestamp": [877.16, 879.72],
+    "text": " And it's something that NVIDIA addresses directly."
+  },
+  {
+    "timestamp": [879.72, 884.32],
+    "text": " While those massive commercial language models might seem like the gold standard, they're"
+  },
+  {
+    "timestamp": [884.32, 887.88],
+    "text": " not always necessary and they definitely come with a hefty price tag."
+  },
+  {
+    "timestamp": [887.88, 890.04],
+    "text": " So it's not a one size fits all situation."
+  },
+  {
+    "timestamp": [890.04, 891.04],
+    "text": " Yeah."
+  },
+  {
+    "timestamp": [891.04, 893.84],
+    "text": " Sometimes a smaller more specialized model might be the better option."
+  },
+  {
+    "timestamp": [893.84, 894.84],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [894.84, 899.56],
+    "text": " And videos own experiments have shown that in some cases a smaller finely tuned model can"
+  },
+  {
+    "timestamp": [899.56, 904.16],
+    "text": " actually outperform some of the big name models, especially when it comes to specific tasks"
+  },
+  {
+    "timestamp": [904.16, 906.44],
+    "text": " or industry specific knowledge."
+  },
+  {
+    "timestamp": [906.44, 907.28],
+    "text": " - That's fascinating."
+  },
+  {
+    "timestamp": [907.28, 909.4],
+    "text": " It's a good reminder that the most expensive option"
+  },
+  {
+    "timestamp": [909.4, 910.4],
+    "text": " isn't always the best."
+  },
+  {
+    "timestamp": [910.4, 911.24],
+    "text": " - It's true."
+  },
+  {
+    "timestamp": [911.24, 912.56],
+    "text": " - Sometimes a bit of strategic thinking"
+  },
+  {
+    "timestamp": [912.56, 916.12],
+    "text": " and careful optimization can lead to equally impressive results."
+  },
+  {
+    "timestamp": [916.12, 917.44],
+    "text": " - I agree with you."
+  },
+  {
+    "timestamp": [917.44, 919.6],
+    "text": " And this is where those cost considerations"
+  },
+  {
+    "timestamp": [919.6, 922],
+    "text": " we talked about earlier come back into play."
+  },
+  {
+    "timestamp": [922, 923.96],
+    "text": " It's all about finding the right balance"
+  },
+  {
+    "timestamp": [923.96, 925.12],
+    "text": " between performance"
+  },
+  {
+    "timestamp": [925.12, 931.44],
+    "text": " and affordability. So we've talked about enriching the data, breaking it down into manageable chunks,"
+  },
+  {
+    "timestamp": [931.44, 936.8],
+    "text": " teaching our chatbots to speak our language, and even finding the right AI model for the job."
+  },
+  {
+    "timestamp": [937.68, 941.92],
+    "text": " Is there anything else in video highlights in these 15 control points?"
+  },
+  {
+    "timestamp": [941.92, 945.86],
+    "text": " Well, all of those things are essential, but they're only part of the story."
+  },
+  {
+    "timestamp": [945.86, 948.02],
+    "text": " In video, also stresses the importance"
+  },
+  {
+    "timestamp": [948.02, 950.9],
+    "text": " of continuous monitoring and feedback."
+  },
+  {
+    "timestamp": [950.9, 953.22],
+    "text": " Even with the best design and implementation,"
+  },
+  {
+    "timestamp": [953.22, 954.62],
+    "text": " things can still go wrong."
+  },
+  {
+    "timestamp": [954.62, 956.86],
+    "text": " - Right, so you can't just set it and forget it."
+  },
+  {
+    "timestamp": [956.86, 957.7],
+    "text": " - No."
+  },
+  {
+    "timestamp": [957.7, 960.1],
+    "text": " - Building a successful chatbot is an ongoing process."
+  },
+  {
+    "timestamp": [960.1, 960.94],
+    "text": " - It really is."
+  },
+  {
+    "timestamp": [960.94, 964.14],
+    "text": " You need to constantly monitor your chatbots' performance,"
+  },
+  {
+    "timestamp": [964.14, 967.2],
+    "text": " gather feedback from users, and make adjustments along the way."
+  },
+  {
+    "timestamp": [967.2, 969.36],
+    "text": " It's all about iteration and improvement."
+  },
+  {
+    "timestamp": [969.36, 970.72],
+    "text": " So it's almost like raising a child."
+  },
+  {
+    "timestamp": [970.72, 971.2],
+    "text": " There you go."
+  },
+  {
+    "timestamp": [971.2, 973.68],
+    "text": " You have to nurture it, teach it, and help it grow over time."
+  },
+  {
+    "timestamp": [973.68, 979.6],
+    "text": " Exactly. The more love and attention you give your chatbot, the more intelligent and capable it will become."
+  },
+  {
+    "timestamp": [979.6, 981.44],
+    "text": " This has been an incredible deep dive."
+  },
+  {
+    "timestamp": [981.44, 982.08],
+    "text": " It has."
+  },
+  {
+    "timestamp": [982.08, 983.6],
+    "text": " We've covered so much ground."
+  },
+  {
+    "timestamp": [983.6, 989.4],
+    "text": " From Nvidia's FACTES framework to those crucial 15 control points. Yeah. As we wrap things up, is there"
+  },
+  {
+    "timestamp": [989.4, 992.92],
+    "text": " one key takeaway you'd like our listeners to remember?"
+  },
+  {
+    "timestamp": [992.92, 996.96],
+    "text": " If there's one thing to take away from all of this, it's that building a truly exceptional"
+  },
+  {
+    "timestamp": [996.96, 1004.12],
+    "text": " AI chatbot is a journey, not a destination. It's about meticulous planning, careful execution,"
+  },
+  {
+    "timestamp": [1004.12, 1005.88],
+    "text": " and a constant commitment to learning and improvement. Most importantly, it's about meticulous planning, careful execution, and a constant commitment to learning and"
+  },
+  {
+    "timestamp": [1005.88, 1006.88],
+    "text": " improvement."
+  },
+  {
+    "timestamp": [1006.88, 1011.92],
+    "text": " Most importantly, it's about using this incredible technology to solve real-world problems"
+  },
+  {
+    "timestamp": [1011.92, 1015.24],
+    "text": " and create truly meaningful experiences for your users."
+  },
+  {
+    "timestamp": [1015.24, 1017.88],
+    "text": " And on that note, we've reached the end of our deep dive."
+  },
+  {
+    "timestamp": [1017.88, 1020.2],
+    "text": " I hope you've enjoyed exploring the fascinating world of building smarter chatbots with us. Until next time, keep those AI curiosity gears turning."
+  }
+]
