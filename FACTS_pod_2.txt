@@ -1,0 +1,1326 @@
+[
+  {
+    "timestamp": [0, 1.6],
+    "text": " Okay, I think we've all been there, right?"
+  },
+  {
+    "timestamp": [1.6, 4.52],
+    "text": " Like trying to use one of those chatbots,"
+  },
+  {
+    "timestamp": [4.52, 6.36],
+    "text": " and it just totally misses the mark."
+  },
+  {
+    "timestamp": [6.36, 7.18],
+    "text": " - Oh yeah."
+  },
+  {
+    "timestamp": [7.18, 9.84],
+    "text": " Like you're asking it for like a restaurant recommendation,"
+  },
+  {
+    "timestamp": [9.84, 11.48],
+    "text": " and it's giving you the weather forecast"
+  },
+  {
+    "timestamp": [11.48, 12.32],
+    "text": " in another language."
+  },
+  {
+    "timestamp": [12.32, 15.3],
+    "text": " - Exactly, it's like, did you even read my question?"
+  },
+  {
+    "timestamp": [16.24, 17.92],
+    "text": " So today we're doing a deep dive"
+  },
+  {
+    "timestamp": [17.92, 19.92],
+    "text": " into how to build smarter chatbots."
+  },
+  {
+    "timestamp": [19.92, 22.48],
+    "text": " Ones that actually make your life easier,"
+  },
+  {
+    "timestamp": [22.48, 24],
+    "text": " not more frustrating."
+  },
+  {
+    "timestamp": [24, 26.16],
+    "text": " - And we've got some really interesting research"
+  },
+  {
+    "timestamp": [26.16, 28.08],
+    "text": " from NVIDIA to dig into."
+  },
+  {
+    "timestamp": [28.08, 30.4],
+    "text": " Which is perfect because they're not just talking the talk,"
+  },
+  {
+    "timestamp": [30.4, 31.56],
+    "text": " they're walking the walk."
+  },
+  {
+    "timestamp": [31.56, 32.24],
+    "text": " Right."
+  },
+  {
+    "timestamp": [32.24, 35.16],
+    "text": " They actually built three chatbots for their own employees."
+  },
+  {
+    "timestamp": [35.16, 36.8],
+    "text": " So they're using this stuff every day."
+  },
+  {
+    "timestamp": [36.8, 38.88],
+    "text": " That's going to give you some real world insights."
+  },
+  {
+    "timestamp": [38.88, 39.8],
+    "text": " Absolutely."
+  },
+  {
+    "timestamp": [39.8, 41.76],
+    "text": " And the cool thing is they distilled all their learnings"
+  },
+  {
+    "timestamp": [41.76, 44.32],
+    "text": " into this fact T.S. framework."
+  },
+  {
+    "timestamp": [44.32, 46.24],
+    "text": " I do love a good acronym. So break it down for us. into this fact T.S. framework. I do love a good acronym."
+  },
+  {
+    "timestamp": [46.24, 47.4],
+    "text": " So break it down for us."
+  },
+  {
+    "timestamp": [47.4, 49.2],
+    "text": " What does fact T.S. stand for?"
+  },
+  {
+    "timestamp": [49.2, 51.48],
+    "text": " So F is for freshness."
+  },
+  {
+    "timestamp": [51.48, 52.48],
+    "text": " Makes sense."
+  },
+  {
+    "timestamp": [52.48, 55.52],
+    "text": " You always want the latest info, especially in the fast paced world of tech."
+  },
+  {
+    "timestamp": [55.52, 56.52],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [56.52, 61.56],
+    "text": " And that's where something called retrieval augmented generation comes in or rag for"
+  },
+  {
+    "timestamp": [61.56, 62.56],
+    "text": " short."
+  },
+  {
+    "timestamp": [62.56, 63.56],
+    "text": " Okay."
+  },
+  {
+    "timestamp": [63.56, 65.28],
+    "text": " So rag, not to be confused with the stuff under my sink."
+  },
+  {
+    "timestamp": [65.28, 69.68],
+    "text": " -Definitely not. It's all about keeping the chatbots knowledge base up to date."
+  },
+  {
+    "timestamp": [69.68, 75.36],
+    "text": " -So, like, instead of just having a static set of information, it's constantly pulling in new data."
+  },
+  {
+    "timestamp": [75.36, 79.92],
+    "text": " -Exactly. Think of it this way. You've got your large language model, your LLM."
+  },
+  {
+    "timestamp": [79.92, 87.44],
+    "text": " That's like the brain of the operation. -The brains of the operation. Okay, I'm with you. But even the smartest brain needs fresh input."
+  },
+  {
+    "timestamp": [88.4, 90.88],
+    "text": " Our rag is how you deliver that fresh input."
+  },
+  {
+    "timestamp": [90.88, 93.44],
+    "text": " So it's not just about having a big brain."
+  },
+  {
+    "timestamp": [93.44, 98.08],
+    "text": " It's about making sure that brain has the most current information."
+  },
+  {
+    "timestamp": [98.08, 98.48],
+    "text": " Right."
+  },
+  {
+    "timestamp": [98.48, 102.48],
+    "text": " And where it gets tricky is there are actually like 15 different control points"
+  },
+  {
+    "timestamp": [102.48, 104.4],
+    "text": " within that our egg pipeline."
+  },
+  {
+    "timestamp": [104.4, 106.96],
+    "text": " 15. Okay, we're already getting into the weeds here."
+  },
+  {
+    "timestamp": [107, 108.72],
+    "text": " It's not as complicated as it sounds."
+  },
+  {
+    "timestamp": [108.76, 109.04],
+    "text": " Yeah."
+  },
+  {
+    "timestamp": [109.12, 112.92],
+    "text": " But each of those control points impacts how well your chat bot can access"
+  },
+  {
+    "timestamp": [112.92, 114.36],
+    "text": " and process information."
+  },
+  {
+    "timestamp": [114.4, 117.24],
+    "text": " So like fine tuning an engine, all the little tweaks matter."
+  },
+  {
+    "timestamp": [117.28, 117.48],
+    "text": " Yeah."
+  },
+  {
+    "timestamp": [117.52, 120.28],
+    "text": " And if even one of those control points is off, your chat"
+  },
+  {
+    "timestamp": [120.28, 122.56],
+    "text": " bot's going to start giving you those head scratching responses."
+  },
+  {
+    "timestamp": [122.6, 127.88],
+    "text": " Like telling me the wrong opening hours for a restaurant. Exactly. So one example is how you divide"
+  },
+  {
+    "timestamp": [127.88, 132.44],
+    "text": " up the information your chatbot has access to. Like how do you break down a huge document"
+  },
+  {
+    "timestamp": [132.44, 138.72],
+    "text": " into manageable chunks for the AI? Oh, chunking. Because you wouldn't just feed someone an"
+  },
+  {
+    "timestamp": [138.72, 143.88],
+    "text": " entire encyclopedia and expect them to make sense of it. Exactly. And if you chunk poorly,"
+  },
+  {
+    "timestamp": [143.88, 145.68],
+    "text": " the AI might miss crucial context"
+  },
+  {
+    "timestamp": [145.68, 148.24],
+    "text": " and give you a totally irrelevant response."
+  },
+  {
+    "timestamp": [148.24, 150.72],
+    "text": " OK, so chunking matters."
+  },
+  {
+    "timestamp": [150.72, 154.64],
+    "text": " What else did NVIDIA discover about this whole RI process?"
+  },
+  {
+    "timestamp": [154.64, 158.88],
+    "text": " They found that using a mix of search methods worked best."
+  },
+  {
+    "timestamp": [158.88, 161.04],
+    "text": " They combined the traditional keyword search"
+  },
+  {
+    "timestamp": [161.04, 163.92],
+    "text": " with something called AI-powered vector search."
+  },
+  {
+    "timestamp": [163.92, 165.28],
+    "text": " AI-powered vector search. I'm going to get a bit more explanation on vector search. AI powered vector search."
+  },
+  {
+    "timestamp": [165.28, 167.12],
+    "text": " I'm going to get a bit more explanation on that one."
+  },
+  {
+    "timestamp": [167.12, 168.28],
+    "text": " So it's complicated."
+  },
+  {
+    "timestamp": [168.28, 170.08],
+    "text": " But basically, it's a way for the AI"
+  },
+  {
+    "timestamp": [170.08, 172.84],
+    "text": " to understand the meaning behind words and phrases,"
+  },
+  {
+    "timestamp": [172.84, 174.12],
+    "text": " not just the words themselves."
+  },
+  {
+    "timestamp": [174.12, 176.68],
+    "text": " So like how happy and joyful are different words"
+  },
+  {
+    "timestamp": [176.68, 178.16],
+    "text": " but have similar meanings?"
+  },
+  {
+    "timestamp": [178.16, 179.56],
+    "text": " That's a great way to put it."
+  },
+  {
+    "timestamp": [179.56, 181.16],
+    "text": " And by using both types of search,"
+  },
+  {
+    "timestamp": [181.16, 182.68],
+    "text": " they can make sure the chat bot was finding"
+  },
+  {
+    "timestamp": [182.68, 186.8],
+    "text": " the most relevant information, even if the user didn't use the exact keywords."
+  },
+  {
+    "timestamp": [186.8, 191.28],
+    "text": " That's smart. And then they also talked about something called metadata enrichment."
+  },
+  {
+    "timestamp": [192, 193.36],
+    "text": " What is that all about?"
+  },
+  {
+    "timestamp": [193.36, 197.04],
+    "text": " It's like when you add those little tags and descriptions to files on your computer."
+  },
+  {
+    "timestamp": [197.04, 198.64],
+    "text": " So you can actually find them later."
+  },
+  {
+    "timestamp": [198.64, 204.64],
+    "text": " Exactly. Metadata helps the AI understand what each piece of information is about even before"
+  },
+  {
+    "timestamp": [204.64, 205.68],
+    "text": " it reads it."
+  },
+  {
+    "timestamp": [205.68, 208.4],
+    "text": " So it's like giving the chatbot a little cheat sheet."
+  },
+  {
+    "timestamp": [208.4, 210.52],
+    "text": " In a way, yes."
+  },
+  {
+    "timestamp": [210.52, 215.84],
+    "text": " It helps it categorize and prioritize information so it can find the right answers faster."
+  },
+  {
+    "timestamp": [215.84, 217.72],
+    "text": " F for freshness check."
+  },
+  {
+    "timestamp": [217.72, 221.96],
+    "text": " We've got a chatbot that's armed with the latest and greatest information, but what about"
+  },
+  {
+    "timestamp": [221.96, 225],
+    "text": " how that information is organized within the chatbot itself?"
+  },
+  {
+    "timestamp": [225, 228],
+    "text": " Ah, that's where A comes in architecture."
+  },
+  {
+    "timestamp": [228, 232],
+    "text": " Right, because you could have all the information in the world. But if it's not organized in"
+  },
+  {
+    "timestamp": [232, 234],
+    "text": " a way that makes sense, it's not going to be very helpful."
+  },
+  {
+    "timestamp": [234, 239],
+    "text": " That's the million dollar question. Do you build one giant chatbot that does everything?"
+  },
+  {
+    "timestamp": [239, 241],
+    "text": " Or lots of little specialized ones."
+  },
+  {
+    "timestamp": [241, 243],
+    "text": " Ooh, that's a tough one."
+  },
+  {
+    "timestamp": [243, 244],
+    "text": " What are the trade-offs?"
+  },
+  {
+    "timestamp": [244, 246],
+    "text": " Well, there are definitely pros and cons to each approach."
+  },
+  {
+    "timestamp": [246, 249],
+    "text": " Like with one giant chatbot, you might be able to handle"
+  },
+  {
+    "timestamp": [249, 251],
+    "text": " a wider range of questions."
+  },
+  {
+    "timestamp": [251, 254],
+    "text": " But it could also be slower and less accurate."
+  },
+  {
+    "timestamp": [254, 256],
+    "text": " - Because it's trying to be a jack of all trades,"
+  },
+  {
+    "timestamp": [256, 257],
+    "text": " but master of none."
+  },
+  {
+    "timestamp": [257, 259],
+    "text": " - Right, whereas with specialized chatbots,"
+  },
+  {
+    "timestamp": [259, 262],
+    "text": " you can really fine tune them for specific tasks."
+  },
+  {
+    "timestamp": [262, 270.5],
+    "text": " - So like one chatbot for IT questions, one for HR, one for product info, that kind of thing."
+  },
+  {
+    "timestamp": [270.5, 275.5],
+    "text": " >> Exactly. And NVIDIA is actually experimenting with both approaches, which is really interesting."
+  },
+  {
+    "timestamp": [275.5, 278],
+    "text": " >> So they're hedging their bets, seeing what works best."
+  },
+  {
+    "timestamp": [278, 281],
+    "text": " >> Yeah. And they're also looking at something they call co-pilots."
+  },
+  {
+    "timestamp": [281, 283.5],
+    "text": " >> Co-pilots, like in a spaceship."
+  },
+  {
+    "timestamp": [283.5, 284.5],
+    "text": " >> Kind of."
+  },
+  {
+    "timestamp": [284.5, 285.3],
+    "text": " >> Yeah."
+  },
+  {
+    "timestamp": [285.3, 287.18],
+    "text": " - But in this case, it's more like having an AI assistant"
+  },
+  {
+    "timestamp": [287.18, 289.3],
+    "text": " that's built into the tools you're already using."
+  },
+  {
+    "timestamp": [289.3, 291.58],
+    "text": " - So instead of having to switch between different apps"
+  },
+  {
+    "timestamp": [291.58, 293.98],
+    "text": " and search for things, the AI is right there"
+  },
+  {
+    "timestamp": [293.98, 295.26],
+    "text": " anticipating your needs."
+  },
+  {
+    "timestamp": [295.26, 296.2],
+    "text": " - Exactly."
+  },
+  {
+    "timestamp": [296.2, 297.98],
+    "text": " It's all about seamless integration,"
+  },
+  {
+    "timestamp": [297.98, 299.06],
+    "text": " which I think is super cool."
+  },
+  {
+    "timestamp": [299.06, 299.9],
+    "text": " - It is cool."
+  },
+  {
+    "timestamp": [299.9, 301.7],
+    "text": " - But also probably pretty challenging to build."
+  },
+  {
+    "timestamp": [301.7, 302.54],
+    "text": " - Oh, absolutely."
+  },
+  {
+    "timestamp": [302.54, 303.38],
+    "text": " Right."
+  },
+  {
+    "timestamp": [303.38, 308.54],
+    "text": " - 'Cause you have to make sure the AI understands not just the information, but also the context"
+  },
+  {
+    "timestamp": [308.54, 310.5],
+    "text": " of the specific tool that's working within."
+  },
+  {
+    "timestamp": [310.5, 314.24],
+    "text": " Like, if you're using a design program, the AI needs to understand things like layers"
+  },
+  {
+    "timestamp": [314.24, 315.18],
+    "text": " and fonts and stuff."
+  },
+  {
+    "timestamp": [315.18, 315.38],
+    "text": " Right."
+  },
+  {
+    "timestamp": [315.38, 316.98],
+    "text": " It's a whole new level of complexity."
+  },
+  {
+    "timestamp": [316.98, 317.34],
+    "text": " Yeah."
+  },
+  {
+    "timestamp": [317.34, 319.28],
+    "text": " But I think it has huge potential."
+  },
+  {
+    "timestamp": [319.28, 320.28],
+    "text": " Me too."
+  },
+  {
+    "timestamp": [320.28, 323.12],
+    "text": " So, we've talked about freshness and architecture."
+  },
+  {
+    "timestamp": [323.12, 326.36],
+    "text": " What's the next letter in our chatbot recipe?"
+  },
+  {
+    "timestamp": [326.36, 328.1],
+    "text": " >> C is for cost."
+  },
+  {
+    "timestamp": [328.1, 330.64],
+    "text": " >> Because this is all starting to sound pretty expensive."
+  },
+  {
+    "timestamp": [330.64, 334],
+    "text": " >> It can be. But Nvidia's research highlights"
+  },
+  {
+    "timestamp": [334, 335.64],
+    "text": " some interesting costs saving measures."
+  },
+  {
+    "timestamp": [335.64, 339.48],
+    "text": " >> Good. Because not every company has Nvidia's budget."
+  },
+  {
+    "timestamp": [339.48, 341.6],
+    "text": " >> Right. One thing they found is that"
+  },
+  {
+    "timestamp": [341.6, 344.68],
+    "text": " those smaller open-source LLMs we talked about earlier."
+  },
+  {
+    "timestamp": [344.68, 346.6],
+    "text": " >> The ones that are a little less flashy."
+  },
+  {
+    "timestamp": [346.6, 347.68],
+    "text": " Yeah, those ones."
+  },
+  {
+    "timestamp": [347.68, 350.16],
+    "text": " They're actually catching up to the big commercial LLMs"
+  },
+  {
+    "timestamp": [350.16, 351.2],
+    "text": " in terms of accuracy."
+  },
+  {
+    "timestamp": [351.2, 351.54],
+    "text": " Really?"
+  },
+  {
+    "timestamp": [351.54, 353.72],
+    "text": " So you don't always need the biggest, baddest AI"
+  },
+  {
+    "timestamp": [353.72, 354.6],
+    "text": " to get good results."
+  },
+  {
+    "timestamp": [354.6, 355.56],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [355.56, 357.24],
+    "text": " And they're way more affordable to run."
+  },
+  {
+    "timestamp": [357.24, 359.44],
+    "text": " That's great news for smaller businesses"
+  },
+  {
+    "timestamp": [359.44, 361.12],
+    "text": " or anyone on a tight budget."
+  },
+  {
+    "timestamp": [361.12, 362.36],
+    "text": " Right."
+  },
+  {
+    "timestamp": [362.36, 364.04],
+    "text": " And another cost saving tip."
+  },
+  {
+    "timestamp": [364.04, 367.64],
+    "text": " NVIDIA recommends setting up something called an LLM gateway."
+  },
+  {
+    "timestamp": [367.64, 368.64],
+    "text": " LLM gateway."
+  },
+  {
+    "timestamp": [368.64, 372.24],
+    "text": " Okay, I'm going to need you to break that one down for me."
+  },
+  {
+    "timestamp": [372.24, 377],
+    "text": " Yeah, it sounds fancy, but it's basically a central hub for managing all your LLMs."
+  },
+  {
+    "timestamp": [377, 379.76],
+    "text": " So instead of having them all over the place, you've got them in one spot."
+  },
+  {
+    "timestamp": [379.76, 380.76],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [380.76, 385],
+    "text": " It helps you track costs, monitor usage, and prevent any runaway expenses."
+  },
+  {
+    "timestamp": [385, 387],
+    "text": " It's like having a budget tracker for your AI."
+  },
+  {
+    "timestamp": [387, 388],
+    "text": " That's a great way to put it."
+  },
+  {
+    "timestamp": [388, 389],
+    "text": " Yeah."
+  },
+  {
+    "timestamp": [389, 392],
+    "text": " And speaking of things that are important, but not always the most exciting,"
+  },
+  {
+    "timestamp": [392, 394],
+    "text": " let's talk about TS."
+  },
+  {
+    "timestamp": [394, 397],
+    "text": " Testing and security can't forget those."
+  },
+  {
+    "timestamp": [397, 398],
+    "text": " Absolutely."
+  },
+  {
+    "timestamp": [398, 401],
+    "text": " Because you can have the smartest, most efficient chatbot in the world."
+  },
+  {
+    "timestamp": [401, 406],
+    "text": " But if it's not secure or properly tested, it could do more harm than good."
+  },
+  {
+    "timestamp": [406, 407.28],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [407.28, 409.2],
+    "text": " So NVIDIA learned the hard way"
+  },
+  {
+    "timestamp": [409.2, 412.32],
+    "text": " that you can't just rely on the LMMs themselves for security."
+  },
+  {
+    "timestamp": [412.32, 414.4],
+    "text": " You have to build in extra layers of protection."
+  },
+  {
+    "timestamp": [414.4, 414.96],
+    "text": " Right."
+  },
+  {
+    "timestamp": [414.96, 417.2],
+    "text": " Especially when you're dealing with sensitive information."
+  },
+  {
+    "timestamp": [417.2, 419.76],
+    "text": " Like employee data or financial records."
+  },
+  {
+    "timestamp": [419.76, 420.32],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [420.32, 423.12],
+    "text": " So they had to implement things like access control lists"
+  },
+  {
+    "timestamp": [423.12, 426.56],
+    "text": " and data encryption to make sure everything was locked down tight."
+  },
+  {
+    "timestamp": [426.56, 429.76],
+    "text": " >> Better safe than sorry, especially in today's world."
+  },
+  {
+    "timestamp": [429.76, 430.76],
+    "text": " >> Absolutely."
+  },
+  {
+    "timestamp": [430.76, 431.76],
+    "text": " >> Yeah."
+  },
+  {
+    "timestamp": [431.76, 434.48],
+    "text": " >> And then testing is all about making sure your chat bot actually works as intended."
+  },
+  {
+    "timestamp": [434.48, 438.4],
+    "text": " >> Which seems obvious, but I'm guessing it's more complicated than just asking it a few"
+  },
+  {
+    "timestamp": [438.4, 439.4],
+    "text": " questions."
+  },
+  {
+    "timestamp": [439.4, 444.04],
+    "text": " >> Oh, yeah. Nvidia recommends building entire data sets specifically for testing different"
+  },
+  {
+    "timestamp": [444.04, 446],
+    "text": " parts of the chatbot's functionality."
+  },
+  {
+    "timestamp": [446, 448],
+    "text": " >> It's like a whole simulated environment."
+  },
+  {
+    "timestamp": [448, 452.4],
+    "text": " >> Kind of, because real world data can be messy and unpredictable."
+  },
+  {
+    "timestamp": [452.4, 454.36],
+    "text": " >> People ask the darnest things."
+  },
+  {
+    "timestamp": [454.36, 455.6],
+    "text": " >> Exactly."
+  },
+  {
+    "timestamp": [455.6, 459.42],
+    "text": " By creating these dedicated testing data sets, you can really put your chat bot"
+  },
+  {
+    "timestamp": [459.42, 463.24],
+    "text": " through the ringer and make sure it can handle anything a user throws at it."
+  },
+  {
+    "timestamp": [463.24, 465.8],
+    "text": " >> So if you can survive the testing phase, it's probably good to go."
+  },
+  {
+    "timestamp": [465.8, 466.8],
+    "text": " That's the idea."
+  },
+  {
+    "timestamp": [466.8, 467.3],
+    "text": " Yeah."
+  },
+  {
+    "timestamp": [467.3, 471.64],
+    "text": " And it's all part of NVIDIA's commitment to building chatbots that are not just cool,"
+  },
+  {
+    "timestamp": [471.64, 473.8],
+    "text": " but actually useful and reliable."
+  },
+  {
+    "timestamp": [473.8, 476.8],
+    "text": " So we've got Freshen's architecture cost testing security."
+  },
+  {
+    "timestamp": [476.8, 477.8],
+    "text": " That's quite a checklist."
+  },
+  {
+    "timestamp": [477.8, 478.8],
+    "text": " It is."
+  },
+  {
+    "timestamp": [478.8, 480.8],
+    "text": " But NVIDIA's research shows that it's worth it."
+  },
+  {
+    "timestamp": [480.8, 483.8],
+    "text": " Because a well-designed chatbot can be a game changer."
+  },
+  {
+    "timestamp": [483.8, 484.6],
+    "text": " Absolutely."
+  },
+  {
+    "timestamp": [484.6, 486.84],
+    "text": " It can improve efficiency boost productivity"
+  },
+  {
+    "timestamp": [486.84, 488.52],
+    "text": " and even free up human employees"
+  },
+  {
+    "timestamp": [488.52, 490.56],
+    "text": " to focus on more strategic tasks."
+  },
+  {
+    "timestamp": [490.56, 492.8],
+    "text": " - Now speaking of NVIDIA's chat bots,"
+  },
+  {
+    "timestamp": [492.8, 494.24],
+    "text": " you mentioned they had actually built"
+  },
+  {
+    "timestamp": [494.24, 495.96],
+    "text": " three for their own employees, right?"
+  },
+  {
+    "timestamp": [495.96, 496.88],
+    "text": " - That's right."
+  },
+  {
+    "timestamp": [496.88, 498.96],
+    "text": " They wanted to put their FCTS framework"
+  },
+  {
+    "timestamp": [498.96, 500.88],
+    "text": " to the test in the real world."
+  },
+  {
+    "timestamp": [500.88, 502.56],
+    "text": " - See if it actually held up under pressure."
+  },
+  {
+    "timestamp": [502.56, 503.72],
+    "text": " - Exactly."
+  },
+  {
+    "timestamp": [503.72, 506],
+    "text": " And so far it seems to be working really well."
+  },
+  {
+    "timestamp": [506, 508],
+    "text": " They've got EnVinFoBot."
+  },
+  {
+    "timestamp": [508, 510],
+    "text": " EnVinFoBot, what's its specialty?"
+  },
+  {
+    "timestamp": [510, 511.84],
+    "text": " EnVinFoBot, what can it do?"
+  },
+  {
+    "timestamp": [511.84, 514.32],
+    "text": " Think of it like their internal Google."
+  },
+  {
+    "timestamp": [514.32, 518.4],
+    "text": " So if you've got a question about company policy or need to find a specific document."
+  },
+  {
+    "timestamp": [518.4, 519.84],
+    "text": " EnVinFoBot got you covered?"
+  },
+  {
+    "timestamp": [519.84, 523.52],
+    "text": " That sounds incredibly useful, especially in a company as big as EnVidia."
+  },
+  {
+    "timestamp": [523.52, 526.6],
+    "text": " I bet it's easy to get lost in the information overload."
+  },
+  {
+    "timestamp": [526.6, 527.4],
+    "text": " >> Oh, totally."
+  },
+  {
+    "timestamp": [527.4, 530],
+    "text": " And we're not talking about a small knowledge base here."
+  },
+  {
+    "timestamp": [530, 533.6],
+    "text": " In-VinfoBot has access to something like 500 million documents."
+  },
+  {
+    "timestamp": [533.6, 535.4],
+    "text": " >> 500 million?"
+  },
+  {
+    "timestamp": [535.4, 536.4],
+    "text": " That's insane."
+  },
+  {
+    "timestamp": [536.4, 538.4],
+    "text": " How do they even manage all that data?"
+  },
+  {
+    "timestamp": [538.4, 540.6],
+    "text": " >> That's where all those FTTS principles come in."
+  },
+  {
+    "timestamp": [540.6, 545.68],
+    "text": " They're pulling data from all sorts of places, like SharePoint, Google Drive, even Slack."
+  },
+  {
+    "timestamp": [545.68, 547.28],
+    "text": " - And then using that hybrid search system"
+  },
+  {
+    "timestamp": [547.28, 548.32],
+    "text": " to make it all searchable."
+  },
+  {
+    "timestamp": [548.32, 549.28],
+    "text": " - Precisely."
+  },
+  {
+    "timestamp": [549.28, 551.24],
+    "text": " It's all about making information accessible"
+  },
+  {
+    "timestamp": [551.24, 552.4],
+    "text": " and easy to find."
+  },
+  {
+    "timestamp": [552.4, 554.28],
+    "text": " - Okay, but here's my question."
+  },
+  {
+    "timestamp": [554.28, 557.04],
+    "text": " We're talking about internal documents, right?"
+  },
+  {
+    "timestamp": [557.04, 559.16],
+    "text": " Some of that stuff has gotta be confidential."
+  },
+  {
+    "timestamp": [559.16, 560],
+    "text": " - You're absolutely right."
+  },
+  {
+    "timestamp": [560, 561.84],
+    "text": " They wouldn't want just anyone accessing"
+  },
+  {
+    "timestamp": [561.84, 564.08],
+    "text": " sensitive financial data or anything like that."
+  },
+  {
+    "timestamp": [564.08, 564.92],
+    "text": " - So how do they make sure"
+  },
+  {
+    "timestamp": [564.92, 568.56],
+    "text": " that wrong people don't accidentally stumble on to something they shouldn't see?"
+  },
+  {
+    "timestamp": [568.56, 572.96],
+    "text": " Well for starters, they chose a database with really robust security features."
+  },
+  {
+    "timestamp": [572.96, 574.92],
+    "text": " So it's got those built-in safeguards?"
+  },
+  {
+    "timestamp": [574.92, 576.28],
+    "text": " Exactly."
+  },
+  {
+    "timestamp": [576.28, 579.72],
+    "text": " And then they could use things like access control lists to restrict certain information"
+  },
+  {
+    "timestamp": [579.72, 582.2],
+    "text": " to specific people or teams."
+  },
+  {
+    "timestamp": [582.2, 587.16],
+    "text": " It's like having a digital bouncer at the door, making sure only authorized personnel get in."
+  },
+  {
+    "timestamp": [587.16, 588],
+    "text": " - Exactly."
+  },
+  {
+    "timestamp": [588, 590.08],
+    "text": " So you can ask envy info bot a question"
+  },
+  {
+    "timestamp": [590.08, 591.56],
+    "text": " about your paychecks,"
+  },
+  {
+    "timestamp": [591.56, 593.4],
+    "text": " but you can't ask it to see everyone else's."
+  },
+  {
+    "timestamp": [593.4, 594.24],
+    "text": " - Makes sense."
+  },
+  {
+    "timestamp": [594.24, 595.6],
+    "text": " So that's envy info bot."
+  },
+  {
+    "timestamp": [595.6, 596.48],
+    "text": " What about the second one?"
+  },
+  {
+    "timestamp": [596.48, 598.04],
+    "text": " - That would be envy help bot."
+  },
+  {
+    "timestamp": [598.04, 599.52],
+    "text": " And this one's all about streamlining"
+  },
+  {
+    "timestamp": [599.52, 601.32],
+    "text": " their IT and HR support."
+  },
+  {
+    "timestamp": [601.32, 603.88],
+    "text": " - So instead of having to wait on hold for hours,"
+  },
+  {
+    "timestamp": [603.88, 605.44],
+    "text": " you can just ask envy help bot your"
+  },
+  {
+    "timestamp": [605.44, 606.44],
+    "text": " burning questions."
+  },
+  {
+    "timestamp": [606.44, 611.24],
+    "text": " Right, like how do I reset my password or how much vacation time do I have left?"
+  },
+  {
+    "timestamp": [611.24, 612.24],
+    "text": " I've got good ones."
+  },
+  {
+    "timestamp": [612.24, 614.44],
+    "text": " I feel like I'm constantly forgetting my password."
+  },
+  {
+    "timestamp": [614.44, 615.8],
+    "text": " Aren't we all?"
+  },
+  {
+    "timestamp": [615.8, 621.12],
+    "text": " And because it's specialized in IT and HR issues, envy help bot can give much more accurate"
+  },
+  {
+    "timestamp": [621.12, 623.76],
+    "text": " answers than a general purpose chat bot."
+  },
+  {
+    "timestamp": [623.76, 628],
+    "text": " It's like the difference between going to your general practitioner and going straight to a specialist."
+  },
+  {
+    "timestamp": [628, 631.84],
+    "text": " Exactly. You're going to get the right diagnosis and treating plan much faster."
+  },
+  {
+    "timestamp": [631.84, 637.6],
+    "text": " Love it. So we've got Envin Fauxbot for general knowledge, Envy help bot for IT and HR."
+  },
+  {
+    "timestamp": [637.6, 640.48],
+    "text": " What's the last one? Their third chat bot is called Scoutbot."
+  },
+  {
+    "timestamp": [640.48, 643.92],
+    "text": " Scoutbot. Okay, I like the sound of that already. What does it do?"
+  },
+  {
+    "timestamp": [643.92, 646.6],
+    "text": " Scoutbot's the finance whiz of the group."
+  },
+  {
+    "timestamp": [646.6, 647.76],
+    "text": " - Finance?"
+  },
+  {
+    "timestamp": [647.76, 649.48],
+    "text": " Now that's interesting."
+  },
+  {
+    "timestamp": [649.48, 651.32],
+    "text": " That kind of financial stuff can handle."
+  },
+  {
+    "timestamp": [651.32, 652.72],
+    "text": " - It's designed to answer questions"
+  },
+  {
+    "timestamp": [652.72, 654.64],
+    "text": " about NVIDIA's financial performance."
+  },
+  {
+    "timestamp": [654.64, 657],
+    "text": " - So like earnings reports, stock prices,"
+  },
+  {
+    "timestamp": [657, 658.08],
+    "text": " that kind of thing. - Exactly."
+  },
+  {
+    "timestamp": [658.08, 660.04],
+    "text": " It pulls data from all sorts of public sources"
+  },
+  {
+    "timestamp": [660.04, 662.84],
+    "text": " and then uses its AI powers to make sense of it all."
+  },
+  {
+    "timestamp": [662.84, 664.56],
+    "text": " - So in theory, anyone could ask"
+  },
+  {
+    "timestamp": [664.56, 667.28],
+    "text": " Scout bot a question about NVIDIA's finances."
+  },
+  {
+    "timestamp": [667.28, 670.24],
+    "text": " Well, for now, it's mainly used internally."
+  },
+  {
+    "timestamp": [670.24, 674.32],
+    "text": " But they are exploring the possibility of making it more widely available."
+  },
+  {
+    "timestamp": [674.32, 676.96],
+    "text": " Wow, that would be a game changer."
+  },
+  {
+    "timestamp": [676.96, 679.6],
+    "text": " Imagine being able to get instant answers to your questions"
+  },
+  {
+    "timestamp": [679.6, 681.44],
+    "text": " about a company's financial performance."
+  },
+  {
+    "timestamp": [681.44, 684.72],
+    "text": " Right. No more digging through pages and pages of reports."
+  },
+  {
+    "timestamp": [684.72, 685.72],
+    "text": " Sign me up."
+  },
+  {
+    "timestamp": [687.12, 692.12],
+    "text": " Okay, so we've got NVinfobot, NVHelpbot, and Scoutbot."
+  },
+  {
+    "timestamp": [692.8, 694.6],
+    "text": " Three very different chatbots,"
+  },
+  {
+    "timestamp": [694.6, 697.24],
+    "text": " all designed to solve specific problems."
+  },
+  {
+    "timestamp": [697.24, 699.04],
+    "text": " - And they all illustrate the power"
+  },
+  {
+    "timestamp": [699.04, 701.6],
+    "text": " of that fax ETS framework we talked about earlier."
+  },
+  {
+    "timestamp": [701.6, 703.56],
+    "text": " - Because it's not just about building a chatbot,"
+  },
+  {
+    "timestamp": [703.56, 704.72],
+    "text": " it's about building it, right?"
+  },
+  {
+    "timestamp": [704.72, 706.24],
+    "text": " - Exactly, you have to think about"
+  },
+  {
+    "timestamp": [706.24, 709.84],
+    "text": " freshness, architecture, cost testing, security, all of it."
+  },
+  {
+    "timestamp": [709.84, 710.84],
+    "text": " - It's like making a kick."
+  },
+  {
+    "timestamp": [710.84, 712.68],
+    "text": " You can't just throw a bunch of ingredients together"
+  },
+  {
+    "timestamp": [712.68, 713.52],
+    "text": " and hope for the best."
+  },
+  {
+    "timestamp": [713.52, 714.68],
+    "text": " - The perfect analogy."
+  },
+  {
+    "timestamp": [714.68, 716],
+    "text": " You need the right recipe."
+  },
+  {
+    "timestamp": [716, 719.8],
+    "text": " And the FCTS framework is that recipe for chat bots."
+  },
+  {
+    "timestamp": [719.8, 720.68],
+    "text": " - Well said."
+  },
+  {
+    "timestamp": [720.68, 721.88],
+    "text": " So there you have it folks."
+  },
+  {
+    "timestamp": [721.88, 723.48],
+    "text": " If you're thinking about building a chat bot"
+  },
+  {
+    "timestamp": [723.48, 724.56],
+    "text": " for your own company."
+  },
+  {
+    "timestamp": [724.56, 728.08],
+    "text": " - Take a page from NVIDIA's book. Think about those facts. You test principles"
+  },
+  {
+    "timestamp": [728.08, 732.8],
+    "text": " and remember it's not just about the technology. It's about how you use it to solve real world"
+  },
+  {
+    "timestamp": [732.8, 737.2],
+    "text": " problems. Yeah, go make it work for you. And who knows? Maybe one of you listening will"
+  },
+  {
+    "timestamp": [737.2, 743.04],
+    "text": " build the next and info bot or scout bot. The future of chat bots is bright and it's"
+  },
+  {
+    "timestamp": [743.04, 745.72],
+    "text": " being shaped by innovative companies like Nvidia."
+  },
+  {
+    "timestamp": [745.72, 746.96],
+    "text": " It's a great point."
+  },
+  {
+    "timestamp": [746.96, 749.76],
+    "text": " This isn't just some far off sci-fi fantasy anymore."
+  },
+  {
+    "timestamp": [749.76, 750.76],
+    "text": " Chatbots are here."
+  },
+  {
+    "timestamp": [750.76, 753.12],
+    "text": " And they're only going to get smarter and more capable."
+  },
+  {
+    "timestamp": [753.12, 754.44],
+    "text": " So buckle up, folks."
+  },
+  {
+    "timestamp": [754.44, 756.72],
+    "text": " The chatbot revolution is just getting started."
+  },
+  {
+    "timestamp": [756.72, 758.56],
+    "text": " It's going to be an exciting right."
+  },
+  {
+    "timestamp": [758.56, 761.88],
+    "text": " On that note, we'll leave you to ponder the possibilities."
+  },
+  {
+    "timestamp": [761.88, 763.44],
+    "text": " What kind of chatbot would you build?"
+  },
+  {
+    "timestamp": [763.44, 764.56],
+    "text": " The only limit is your imagination."
+  },
+  {
+    "timestamp": [764.56, 766.6],
+    "text": " - Until next time, folks."
+  },
+  {
+    "timestamp": [766.6, 767.64],
+    "text": " Happy chatbotting."
+  },
+  {
+    "timestamp": [767.64, 768.64],
+    "text": " - See you next time."
+  }
+]
